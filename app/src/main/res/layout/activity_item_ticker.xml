@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtNomeMoeda"
+        android:layout_width="0dp"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_weight="2" />
+
+    <TextView
+        android:id="@+id/txtSiglaMoeda"
+        android:layout_width="0dp"
+        android:textColor="#000000"
+        android:textSize="12.5sp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5" />
+
+    <TextView
+        android:id="@+id/txtLast"
+        android:layout_width="0dp"
+        android:textColor="#000000"
+        android:textSize="12.5sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txtBid"
+        android:layout_width="0dp"
+        android:textColor="#000000"
+        android:textSize="12.5sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txtAsk"
+        android:layout_width="0dp"
+        android:textColor="#000000"
+        android:textSize="12.5sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:textAlignment="center" />
+
+
+
+</LinearLayout>

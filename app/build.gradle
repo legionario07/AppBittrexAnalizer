@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId 'br.com.bittrexanalizer'
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:26.+'
+    implementation 'com.android.support:design:26.+'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
+    testImplementation 'junit:junit:4.12'
+    implementation files('libs/GraphView-4.2.1.jar')
+    implementation files('libs/gson-2.6.2.jar')
+    implementation files('libs/httpclient-4.5.3.jar')
+    implementation files('libs/httpclient-cache-4.5.3.jar')
+    implementation files('libs/httpclient-win-4.5.3.jar')
+    implementation files('libs/httpcore-4.4.6.jar')
+    implementation files('libs/httpmime-4.5.3.jar')
+    implementation files('libs/junit-4.12.jar')
+    implementation files('libs/converter-gson-2.0.0-beta3.jar')
+    implementation files('libs/retrofit-2.3.0.jar')
+    implementation files('libs/okio-1.13.0.jar')
+    implementation files('libs/okhttp-3.9.1.jar')
+    implementation files('libs/commons-codec-1.9.jar')
+    implementation files('libs/mail.jar')
+    implementation files('libs/activation.jar')
+    implementation files('libs/additionnal.jar')
+}
+
+
+android {
+
+
+    packagingOptions {
+        exclude 'META-INF/jersey-module-version'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/INDEX.LIST'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/taglib.tld'
+    }
+}

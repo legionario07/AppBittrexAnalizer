@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.8" />
+
+        <TextView
+            android:id="@+id/txtCalcular"
+            android:text="@string/calcular"
+            android:drawableLeft="@drawable/ic_iso_black_24dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="15sp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="7"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="3.8" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="3.8" />
+
+        <TextView
+            android:drawableLeft="@drawable/ic_delete_black_24dp"
+            android:id="@+id/txtDeletar"
+            android:text="@string/deletar"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="7"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="3.8" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="3.8" />
+
+        <TextView
+            android:drawableLeft="@drawable/ic_alarm_black_24dp"
+            android:id="@+id/txtCriarNotificacao"
+            android:text="@string/criar_notificacao"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="7"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="3.8" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="3.8" />
+
+        <TextView
+            android:drawableLeft="@drawable/ic_speaker_notes_black_24dp"
+            android:id="@+id/txtDetalhar"
+            android:text="@string/detalhar"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="7"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="3.8" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="3.8" />
+
+        <TextView
+            android:drawableLeft="@drawable/ic_done_black_24dp"
+            android:id="@+id/txtVender"
+            android:text="@string/vender"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="7"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="3.8" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="#f1f1f1"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1.2" />
+
+        <TextView
+            android:drawableLeft="@drawable/ic_payment_black_24dp"
+            android:id="@+id/txtCriarCompra"
+            android:text="@string/comprar"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="4.5"/>
+
+        <EditText
+            android:id="@+id/inpQuantidadeDeBTCParaComprar"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:hint="@string/quantidade_em_btc"
+            android:textSize="14sp"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:layout_height="40dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="#f1f1f1"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1.2" />
+
+        <TextView
+            android:drawableLeft="@drawable/ic_close_black_24dp"
+            android:id="@+id/txtCriarStopLoss"
+            android:text="@string/criar_stop"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="4.5"/>
+
+        <EditText
+            android:id="@+id/inpValorStop"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:hint="Valor Da Moeda"
+            android:textSize="14sp"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:layout_height="40dp" />
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

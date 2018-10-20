@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_add_coin"
+            android:icon="@drawable/ic_monetization_on_black_24dp"
+            android:title="@string/adicionar_moeda" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_alarm_off_black_24dp"
+            android:title="@string/desligar_notificacoes" />
+
+    </group>
+
+    <item android:title="Services Compra">
+        <menu>
+            <item
+                android:id="@+id/nav_start_service_compra"
+                android:icon="@drawable/ic_play_arrow_black_24dp"
+                android:title="@string/ligar_robot" />
+
+            <item
+                android:id="@+id/nav_stop_service_compra"
+                android:icon="@drawable/ic_stop_black_24dp"
+                android:title="@string/desligar_robot" />
+
+        </menu>
+    </item>
+
+    <item android:title="Services Venda">
+    <menu>
+
+        <item
+            android:id="@+id/nav_start_service_venda"
+            android:icon="@drawable/ic_play_arrow_black_24dp"
+            android:title="@string/ligar_robot_venda" />
+
+        <item
+            android:id="@+id/nav_stop_service_venda"
+            android:icon="@drawable/ic_stop_black_24dp"
+            android:title="@string/desligar_robot_venda" />
+
+    </menu>
+    </item>
+
+    <item android:title="Classificar Moedas">
+        <menu>
+            <item
+                android:id="@+id/nav_clas_nome_moeda"
+                android:icon="@drawable/ic_description_black_24dp"
+                android:title="Nome Moeda" />
+            <item
+                android:id="@+id/nav_clas_last"
+                android:icon="@drawable/ic_monetization_on_black_24dp"
+                android:title="Last" />
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_open_orders"
+        android:icon="@drawable/ic_note_black_24dp"
+        android:title="@string/open_orders" />
+
+    <item
+        android:id="@+id/nav_orders"
+        android:icon="@drawable/ic_event_note_black_24dp"
+        android:title="@string/orders" />
+
+    <item
+        android:id="@+id/nav_balances"
+        android:icon="@drawable/ic_account_balance_black_24dp"
+        android:title="@string/balances" />
+
+    <item
+        android:id="@+id/nav_keys"
+        android:icon="@drawable/ic_vpn_key_black_24dp"
+        android:title="@string/keys" />
+
+
+</menu>

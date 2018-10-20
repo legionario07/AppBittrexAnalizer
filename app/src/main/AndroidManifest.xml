@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.bittrexanalizer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+
+    <application
+        android:allowBackup="true"
+        android:launchMode="singleTop"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="br.com.bittrexanalizer.telas.MainActivityDrawer"
+            android:windowSoftInputMode="stateVisible|adjustPan"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".telas.UserConfiguracao" />
+        <activity android:name=".telas.UserKey" />
+        <activity android:name=".telas.UserBalances" />
+        <activity android:name=".telas.UserOpenOrders" />
+        <activity android:name=".telas.UserOrder" />
+        <activity android:name=".telas.UserOrders" />
+        <activity android:name=".telas.UserTicker" />
+
+
+        <receiver
+            android:name="br.com.bittrexanalizer.receivers.ReceiverBoot"
+            android:label="ReceiverCompleted"
+        android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name="br.com.bittrexanalizer.receivers.ServiceCompra"
+            android:label="ServiceCompra">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="SERVICE_COMPRA"/>
+            </intent-filter>
+        </service>
+
+       <service android:name="br.com.bittrexanalizer.receivers.ServiceAvisoTaxa"
+            android:label="ServiceAvisoTaxa">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="AVISO_TAXA"/>
+            </intent-filter>
+        </service>-->
+
+        <service android:name="br.com.bittrexanalizer.receivers.ServiceVenda"
+            android:label="ServiceVenda">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="SERVICE_VENDA"/>
+
+            </intent-filter>
+
+
+        </service>
+
+
+    </application>
+
+</manifest>

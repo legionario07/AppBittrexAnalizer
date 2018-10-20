@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtCalcularROI"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_height="35dp" />
+
+        <EditText
+            android:id="@+id/inpTotalEmBTCParaCompra"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:hint="@string/valor_em_btc_para_compra"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp"
+            android:textAlignment="center"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/inpValorCoinBuy"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:hint="Valor de Compra"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:textSize="13sp" />
+
+
+        <EditText
+            android:id="@+id/inpValorCoinSell"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:hint="Valor de Venda"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txtTotalCoinAdquirido"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:enabled="false"
+            android:background="#c6c6c6"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txtTotalBTCAdquirido"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:background="#c6c6c6"
+            android:hint="@string/total_em_btc_adquirido"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+
+        <ImageButton
+            android:layout_width="28dp"
+            android:gravity="center"
+            android:background="#cccccc"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_play_circle_outline_black_24dp"
+            android:id="@+id/imgCalcular"
+            android:layout_height="38dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
